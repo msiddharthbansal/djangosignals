@@ -5,4 +5,5 @@ By default, Django signals are executed synchronously.
 3) Define a Model and a Signal in myapp/models.py .
 (File shared as Q1/models.py)
 4) Apply migrations.
-5) Make a file to test signals in root directory.
+5) Make a file to test signals in root directory and execute it.
+(File shared as Q1/test_signals.py)
