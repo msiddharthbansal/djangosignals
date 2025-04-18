@@ -11,3 +11,7 @@ def slow_signal(sender, instance, **kwargs):
     print("Signal started")
     time.sleep(5)
     print("Signal ended")
+
+@receiver(post_save, sender=TestModel)
+def thread_check_signal(sender, instance, **kwargs):
+    print(f"[Signal] Thread ID: {threading.get_ident()}")
