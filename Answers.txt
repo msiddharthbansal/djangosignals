@@ -1,0 +1,3 @@
+Django signals are executed synchronously (by default).
+Django signals run in the same thread as the caller (by default).
+Django signals run in the same database transaction as the caller (by default).
